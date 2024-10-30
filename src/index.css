@@ -1,0 +1,92 @@
+* {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #5a6a41;
+    font-size: 20px;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    background: #ffe0ea;
+    gap: 14px;
+    padding: 40px 30px
+  }
+
+header {
+    display: flex;
+    align-items: stretch;
+}
+
+header input {
+    flex: 1;
+    border-radius: 14px;
+    outline: none;
+    width: 100%;
+  }
+
+  header button {
+    border-radius: 14px;
+    background: transparent;
+    transition-duration: 200ms;
+    cursor: pointer;
+    margin-left: 10px ;
+  }
+  
+  header button:hover {
+    opacity: 0.8;
+  }
+
+  header button,
+header input {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: white;
+}
+
+.todoItem p {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  transition-duration: 300ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 500px){
+  *{
+    font-size: 15px;
+  }
+}
